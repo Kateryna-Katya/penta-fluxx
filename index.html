@@ -17,34 +17,47 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
   <script type="module" crossorigin src="/penta-fluxx/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/penta-fluxx/assets/styles-woqzYUbU.css">
+  <link rel="stylesheet" crossorigin href="/penta-fluxx/assets/styles-DOs3Gkp4.css">
 </head>
 
   <body>
     <div class="smooth-wrapper">
-    <header class="header">
+    <div class="mobile-menu">
+  <div class="mobile-menu__content">
+      <nav class="mobile-nav">
+          <a href="./#hero" class="mobile-link">Главная</a>
+          <a href="./#about" class="mobile-link">О платформе</a>
+          <a href="./#benefits" class="mobile-link">Преимущества</a>
+          <a href="./#innovations" class="mobile-link">Инновации</a>
+          <a href="./#blog" class="mobile-link">Блог</a>
+          <a href="./#contact" class="mobile-link btn-mobile">Начать сейчас</a>
+      </nav>
+  </div>
+</div>
+<header class="header">
   <div class="container header__container">
-      <a href="#" class="header__logo">
+      <a href="./#hero" class="header__logo">
           Penta<span class="text-accent">Fluxx</span>
       </a>
 
       <nav class="header__nav">
           <ul class="header__menu">
-              <li class="header__item"><a href="#" class="header__link">Главная</a></li>
-              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
-              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
-              <li class="header__item"><a href="#solutions" class="header__link">AI-решения</a></li>
-              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
-              <li class="header__item"><a href="#faq" class="header__link">FAQ</a></li>
+              <li class="header__item"><a href="./#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#benefits" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#blog" class="header__link">Блог</a></li>
           </ul>
       </nav>
 
       <div class="header__actions">
-          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
-          <button class="header__burger" aria-label="Открыть меню">
-              <i data-lucide="menu"></i>
+          <a href="./#contact" class="btn btn--primary desktop-only">Начать сейчас</a>
+          <button class="header__burger" aria-label="Меню">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
           </button>
       </div>
   </div>
@@ -52,14 +65,203 @@
 
     <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg-glow"></div>
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge">Технология нового поколения</div>
+          <h1 class="hero__title">
+              AI-инструменты для <br>
+              <span class="text-gradient">реальных задач</span>
+          </h1>
+          <p class="hero__desc">
+              Воплотите мечты в реальность с нашей платформой. Создавайте интеллектуальных ботов без кода. Передовая цифровая инфраструктура, которая работает на вас.
+          </p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Попробовать бесплатно</a>
+              <a href="#about" class="btn btn--outline">Узнать больше</a>
+          </div>
+      </div>
+      <div class="hero__visual">
+          <img src="/penta-fluxx/assets/one-DhFf6MCy.jpg" alt="AI Interface" class="hero__img">
+          <div class="hero__floating-card card-1">
+              <i data-lucide="zap"></i>
+              <span>Быстрый старт</span>
+          </div>
+          <div class="hero__floating-card card-2">
+              <i data-lucide="bar-chart-2"></i>
+              <span>Рост +120%</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title">Решения, которые <br> меняют правила игры</h2>
+      </div>
+      <div class="about__grid">
+          <div class="about__text">
+              <p class="text-lg">
+                  Мы предлагаем не просто конструктор, а экосистему.
+                  Это <strong>инновационная технология</strong>, позволяющая переосмыслить подход к развитию вашего цифрового присутствия.
+              </p>
+              <ul class="about__features">
+                  <li>
+                      <i data-lucide="check-circle" class="text-accent"></i>
+                      <span>Удобная адаптация без сложностей</span>
+                  </li>
+                  <li>
+                      <i data-lucide="check-circle" class="text-accent"></i>
+                      <span>Методологии, доказавшие эффективность</span>
+                  </li>
+                  <li>
+                      <i data-lucide="check-circle" class="text-accent"></i>
+                      <span>Доступ к платформе открыт в Европе</span>
+                  </li>
+              </ul>
+          </div>
+          <div class="about__image reveal-img">
+              <img src="/penta-fluxx/assets/two-CfVpCLAm.jpg" alt="Dashboard Interface">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="benefits" class="section benefits">
+  <div class="container">
+      <div class="section__header text-center">
+          <h2 class="section__title">Почему выбирают нас?</h2>
+          <p class="section__subtitle">Оцените перспективы проекта уже сегодня</p>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-card">
+              <div class="benefit-card__icon">
+                  <i data-lucide="rocket"></i>
+              </div>
+              <h3>Быстрый и лёгкий старт</h3>
+              <p>Подключение занимает 2 минуты. Легко разобраться без опыта программирования.</p>
+          </div>
+          <div class="benefit-card">
+              <div class="benefit-card__icon">
+                  <i data-lucide="trending-up"></i>
+              </div>
+              <h3>Стратегия роста</h3>
+              <p>Практики, применимые уже сегодня. Постройте карьеру, которая работает на вас.</p>
+          </div>
+          <div class="benefit-card">
+              <div class="benefit-card__icon">
+                  <i data-lucide="shield-check"></i>
+              </div>
+              <h3>Надежность</h3>
+              <p>Экспертная поддержка на всех этапах. Мы — ваш проверенный партнер.</p>
+          </div>
+          <div class="benefit-card">
+              <div class="benefit-card__icon">
+                  <i data-lucide="coins"></i>
+              </div>
+              <h3>Пассивный доход</h3>
+              <p>Технология для создания масштабируемых систем. Откройте новые возможности монетизации.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="innovations" class="section innovations">
+  <div class="container">
+      <div class="innovations__wrapper">
+          <div class="innovations__content">
+              <h2 class="section__title">Интеллект,<br>доступный каждому</h2>
+              <p>
+                  Наши алгоритмы анализируют поведение пользователей и адаптируют сценарии общения в реальном времени.
+              </p>
+              <div class="innovations__stats">
+                  <div class="stat-item">
+                      <span class="stat-num">99%</span>
+                      <span class="stat-desc">Uptime</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-num">24/7</span>
+                      <span class="stat-desc">AI Support</span>
+                  </div>
+              </div>
+          </div>
+          <div class="innovations__visual">
+              <div class="code-block">
+                  <div class="code-header">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                  </div>
+                  <div class="code-body">
+                      <p><span class="code-c1">const</span> bot = <span class="code-c2">new</span> PentaAI();</p>
+                      <p>bot.<span class="code-c3">init</span>({</p>
+                      <p>&nbsp;&nbsp;mode: <span class="code-c4">'autonomous'</span>,</p>
+                      <p>&nbsp;&nbsp;learning: <span class="code-c1">true</span></p>
+                      <p>});</p>
+                      <p><span class="code-comment">// System initialized...</span></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="blog" class="section blog">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title">Блог и Ресурсы</h2>
+          <a href="#" class="link-arrow">Все статьи <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="/penta-fluxx/assets/four-BnbZeOeL.jpg" alt="Blog 1">
+                  <span class="blog-tag">AI Тренды</span>
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-date">12 Окт 2024</span>
+                  <h3>Как нейросети меняют рынок чат-ботов во Франции</h3>
+                  <a href="#contact" class="read-more">Читать далее</a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="/penta-fluxx/assets/three-_VJERAY5.jpg" alt="Blog 2">
+                  <span class="blog-tag">Туториал</span>
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-date">08 Окт 2024</span>
+                  <h3>Пошаговый путь: создаем первого бота за 15 минут</h3>
+                  <a href="#contact" class="read-more">Читать далее</a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="/penta-fluxx/assets/five-DCwoBS9u.jpg" alt="Blog 3">
+                  <span class="blog-tag">Бизнес</span>
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-date">01 Окт 2024</span>
+                  <h3>Программа пассивного дохода через автоматизацию</h3>
+                  <a href="#contact" class="read-more">Читать далее</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
       <div class="footer__grid">
           <div class="footer__col">
-              <a href="#" class="footer__logo">
+              <a href="./#hero" class="footer__logo">
                   Penta<span class="text-accent">Fluxx</span>
               </a>
               <p class="footer__desc">
@@ -70,10 +272,10 @@
           <div class="footer__col">
               <h3 class="footer__title">Навигация</h3>
               <ul class="footer__list">
-                  <li><a href="#" class="footer__link">Главная</a></li>
-                  <li><a href="#about" class="footer__link">О платформе</a></li>
-                  <li><a href="#innovations" class="footer__link">Технологии</a></li>
-                  <li><a href="#blog" class="footer__link">Блог</a></li>
+                  <li><a href="./#hero" class="footer__link">Главная</a></li>
+                  <li><a href="./#about" class="footer__link">О платформе</a></li>
+                  <li><a href="./#innovations" class="footer__link">Технологии</a></li>
+                  <li><a href="./#blog" class="footer__link">Блог</a></li>
               </ul>
           </div>
 
