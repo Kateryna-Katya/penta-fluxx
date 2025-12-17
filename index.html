@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
   <script type="module" crossorigin src="/penta-fluxx/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/penta-fluxx/assets/styles-DOs3Gkp4.css">
+  <link rel="stylesheet" crossorigin href="/penta-fluxx/assets/styles-nVKt_iiU.css">
 </head>
 
   <body>
@@ -255,6 +255,88 @@
       </div>
   </div>
 </section>
+<section id="contact" class="section contact">
+  <div class="container contact__container">
+
+      <div class="contact__info">
+          <div class="contact__header">
+              <h2 class="section__title">Начать сейчас</h2>
+              <p class="section__subtitle">
+                  Заполните форму для бесплатной консультации. Наши эксперты свяжутся с вами в течение 24 часов.
+              </p>
+          </div>
+
+          <div class="contact__details">
+              <div class="contact__item">
+                  <div class="contact__icon"><i data-lucide="mail"></i></div>
+                  <div>
+                      <h4>Email</h4>
+                      <a href="mailto:support@penta-fluxx.blog">support@penta-fluxx.blog</a>
+                  </div>
+              </div>
+              <div class="contact__item">
+                  <div class="contact__icon"><i data-lucide="phone"></i></div>
+                  <div>
+                      <h4>Телефон</h4>
+                      <a href="tel:+33145238912">+33 1 45 23 89 12</a>
+                  </div>
+              </div>
+              <div class="contact__item">
+                  <div class="contact__icon"><i data-lucide="map-pin"></i></div>
+                  <div>
+                      <h4>Офис</h4>
+                      <span>24 Rue du Faubourg Saint-Honoré, Paris</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+
+          <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+              <span class="error-msg">Введите имя</span>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+              <span class="error-msg">Введите корректный email</span>
+          </div>
+
+          <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+33..." required>
+              <span class="error-msg">Только цифры допускаются</span>
+          </div>
+
+          <div class="form-group captcha-group">
+              <label id="captchaLabel" for="captcha">Сколько будет 3 + 5?</label>
+              <input type="number" id="captcha" name="captcha" required>
+              <span class="error-msg">Неверный ответ</span>
+          </div>
+
+          <div class="form-checkbox">
+              <input type="checkbox" id="privacy" required>
+              <label for="privacy">Я соглашаюсь с <a href="./privacy.html">Политикой обработки данных</a></label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--submit">
+              <span class="btn-text">Отправить заявку</span>
+              <span class="loader"></span>
+          </button>
+
+          <div class="form-success" id="formSuccess">
+              <i data-lucide="check-circle" class="success-icon"></i>
+              <h3>Заявка отправлена!</h3>
+              <p>Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+      </form>
+  </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
@@ -315,6 +397,13 @@
       </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+      <i data-lucide="cookie" class="cookie-icon"></i>
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      </div>
+      <button class="btn btn--primary btn--sm" id="cookieAccept">Хорошо</button>
+      </div>
 </div>
   </body>
 </html>
