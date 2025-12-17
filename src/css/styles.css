@@ -859,3 +859,86 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: #fff; }
 
 .btn--sm { padding: 10px 20px; font-size: 14px; width: 100%; }
 @media(min-width: 400px) { .btn--sm { width: auto; align-self: flex-end; } }
+/* =========================================
+   13. LEGAL PAGES (Юридические страницы)
+   ========================================= */
+   .pages {
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 100px;
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+}
+
+.pages h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) { .pages h1 { font-size: 48px; } }
+
+.pages h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.pages p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.pages strong {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.pages li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.pages li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color-accent);
+}
+
+.pages a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.3s;
+}
+
+.pages a:hover {
+    opacity: 0.8;
+}
+
+/* Вложенные списки */
+.pages ul ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.pages ul ul li::before {
+    background-color: var(--color-primary); /* Другой цвет для вложенных */
+    box-shadow: none;
+}
